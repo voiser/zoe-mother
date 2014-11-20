@@ -1,0 +1,2 @@
+#!/bin/bash
+touch ${ZOE_HOME}/etc/zoe-mother.conf

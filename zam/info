@@ -1,0 +1,6 @@
+agent = mother
+version = 0.0.1
+license = MIT
+maintainer = David Muñoz <david@gul.es>
+script = mother.py
+description = Make Zoe behave like your mother
