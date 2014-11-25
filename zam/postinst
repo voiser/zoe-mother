@@ -1,2 +1,14 @@
 #!/bin/bash
-touch ${ZOE_HOME}/etc/zoe-mother.conf
+
+F=zoe-mother.conf
+
+ORIG=${ZOE_HOME}/etc/${F}.example
+DEST=${ZOE_HOME}/etc/${F}
+
+if [ -f "${DEST}" ]; then
+    echo "Config file exists, keeping it..."
+else
+    echo "Creating default config file"
+    cp "$ORIG" "$DEST"
+fi
+
